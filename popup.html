@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gott Verdamm Mi Ipsum</title>
+        
+        <style>
+            body{
+                background: #e6e6e6;
+                background-image: url(img/vignes.jpg);
+                background-position: top left;
+                background-size: cover;
+            }
+            h2{
+                font-family: "Helvetica",sans-serif;
+                padding: 5px;
+            }
+            textarea{
+                width: 300px;
+                height: 150px;
+                border-radius: 10px;
+                font-family: "Arial",serif;
+                padding: 10px;
+            }
+            footer p:last-child{
+                font-family: "Helvetica",sans-serif;
+                background-color: rgba(0,0,0,.5);
+                padding: 8px;
+                font-size: 10pt;
+                color: #ffffff;
+            }
+            input,label{
+                font-family: "Helvetica",sans-serif;
+                background-color: rgba(0,0,0,.7);
+                padding: 6px;
+                font-size: 12pt;
+                color: #ffffff;
+                cursor: pointer;
+                border: none;
+            }
+            input:hover{
+                color: #0096FF;
+            }
+            #nbParagraph{
+                cursor: auto;
+                width: 40px;
+            }
+            a{
+                color: #fff;
+            }
+            a:hover{
+                color: #0096FF;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Gott Verdamm Mi Ipsum !</h2>
+        <p>
+            <label for="nbParagraph">Paragraphe(s):</label>
+            <input type="number" value="1" name="nbParagraph" id="nbParagraph" min="1" max="10">
+            <input type="button" value="Générer !" name="generer" id="generer">
+        </p>
+        <p> 
+            <input type="button" value="Sélectionner" name="selectionner" id="selectionner">
+        </p>
+        <textarea id="res"rows="12" cols="40" placeholder="Lorem ipsum dolor sit amet." readonly >Loading, please wait..</textarea>
+        <footer>
+            <p><input type="button" value="A propos" name="apropos" id="apropos"></p>
+            <p>&copy; 2015 <a href="http://bouchereaua.net" target="_blank">Aymeric Bouchereau</a>. Licensed CC BY-SA 4.0.</p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="js/Ipsum_generator.js"></script>
+</html>
