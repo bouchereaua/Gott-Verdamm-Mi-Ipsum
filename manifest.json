@@ -2,7 +2,7 @@
     "manifest_version":2,
     "name":"Gott Verdamm Mi Ipsum",
     "version":"1.0",
-    "description":"Gott Verdamm Mi Ipsum est une adaptation du Lorem Ipsum avec des mots issus du patois anciennement parlé en Alsace (France). Inspirée par le Schnapsum (lorem ipsum alsacien) mis en ligne par Alsacréations (http://www.alsacreations.com/page/schnapsum/).",
+    "description":"Adaptation du Lorem Ipsum avec des mots issus du patois anciennement parlé en Alsace (France).",
     "icons":{
         "16":"img/icone16.png",
         "48":"img/icone48.png",

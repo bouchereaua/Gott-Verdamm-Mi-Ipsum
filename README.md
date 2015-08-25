@@ -6,6 +6,10 @@ Gott Verdamm Mi Ipsum est une adaptation du traditionnel texte de remplissage Lo
 
 La création de l'extension a été inspirée par le Schnapsum (lorem ipsum alsacien) mis en ligne par Alsacréations ([http://www.alsacreations.com/page/schnapsum/](http://www.alsacreations.com/page/schnapsum/)).
 
+## Usage
+
+[Download and install the chrome extension](https://chrome.google.com/webstore/detail/gott-verdamm-mi-ipsum/fkemnklniiegbggfijmjbhodojiogddi?hl=fr)
+
 ## Contact
 
 [Website: bouchereaua.net](http://bouchereaua.net)
