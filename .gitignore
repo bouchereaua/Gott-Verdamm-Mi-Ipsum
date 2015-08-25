@@ -1,1 +1,5 @@
 /psd
+*.psd
+*.crx
+*.pem
+/release
