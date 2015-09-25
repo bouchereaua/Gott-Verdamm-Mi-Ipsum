@@ -30,7 +30,7 @@ var loremGotFotamiIpsum = new function(){
     this.getARandomNumberBetween = function(min,max){
         return Math.floor(Math.random()*(max-min+1)) + min;
     };
-    this.generateIpsum = function(nb,type){
+    this.generateIpsum = function(nb,type,p){
         switch(type){
             case "paragraph":
                 var paragraphs = new Array();
@@ -38,7 +38,8 @@ var loremGotFotamiIpsum = new function(){
                 while(i<nb){
                     var length = this.getARandomNumberBetween(this.paramParagraph[0],this.paramParagraph[1]);
                     var paragraph = this.generateIpsum(length,"sentence");
-                    paragraphs.push("<p>"+paragraph+"</p>");
+                    if(p){paragraphs.push("<p>"+paragraph+"</p>");}
+                    else{paragraphs.push(""+paragraph+"");}
                     i++;
                 }
                 return paragraphs.join("\n");
@@ -67,7 +68,7 @@ var loremGotFotamiIpsum = new function(){
 // Launch ipsum generator !
 document.addEventListener("DOMContentLoaded",function(event){
     loremGotFotamiIpsum.paramWords = loremGotFotamiIpsum.shuffle(loremGotFotamiIpsum.paramWords);
-    document.getElementById("res").value = loremGotFotamiIpsum.generateIpsum(1,"paragraph"); 
+    document.getElementById("res").value = loremGotFotamiIpsum.generateIpsum(1,"paragraph",true); 
     selectIpsum();
 });
 document.getElementById("apropos").addEventListener("click",function(){
@@ -78,8 +79,9 @@ document.getElementById("selectionner").addEventListener("click",function(){
 });
 document.getElementById("generer").addEventListener("click",function(){
     var nbParagraph = document.getElementById("nbParagraph").value;
+    var isBaliseP = document.getElementById("baliseP").checked;
     loremGotFotamiIpsum.paramWords = loremGotFotamiIpsum.shuffle(loremGotFotamiIpsum.paramWords);
-    document.getElementById("res").value = loremGotFotamiIpsum.generateIpsum(nbParagraph,"paragraph"); 
+    document.getElementById("res").value = loremGotFotamiIpsum.generateIpsum(nbParagraph,"paragraph",isBaliseP); 
     selectIpsum();
 });
 function selectIpsum(){
