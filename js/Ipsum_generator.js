@@ -1,5 +1,5 @@
 /*
-* Gott Verdamm Mi Ipsum - v1.0 - 24/08/2015
+* Elsass Ipsum - v1.0 - 24/08/2015
 * Copyright (c) 2015 Aymeric Bouchereau; Licensed CC BY-SA 4.0
 */
 var loremGotFotamiIpsum = new function(){
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded",function(event){
     selectIpsum();
 });
 document.getElementById("apropos").addEventListener("click",function(){
-    alert("Gott Verdamm Mi Ipsum est une adaptation du traditionnel texte de remplissage Lorem Ipsum. Il s'agit de mots issus du patois anciennement parlé en Alsace (France), l'alsacien. \n\nLa création de l'extension a été inspirée par le Schnapsum (lorem ipsum alsacien) mis en ligne par Alsacréations (http://www.alsacreations.com/page/schnapsum/)."); 
+    alert("Elsass Ipsum est une adaptation du traditionnel texte de remplissage Lorem Ipsum. Il s'agit de mots issus du patois anciennement parlé en Alsace (France), l'alsacien. \n\nLa création de l'extension a été inspirée par le Schnapsum (lorem ipsum alsacien) mis en ligne par Alsacréations (http://www.alsacreations.com/page/schnapsum/)."); 
 });
 document.getElementById("selectionner").addEventListener("click",function(){
     selectIpsum();
