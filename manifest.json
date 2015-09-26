@@ -1,7 +1,7 @@
 {
     "manifest_version":2,
-    "name":"Gott Verdamm Mi Ipsum",
-    "version":"1.0",
+    "name":"Elsass Ipsum",
+    "version":"2.0",
     "description":"Adaptation du Lorem Ipsum avec des mots issus du patois anciennement parlé en Alsace (France).",
     "icons":{
         "16":"img/icone16.png",
