@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Gott Verdamm Mi Ipsum</title>
+        <title>Elsass Ipsum</title>
         
         <style>
             body{
@@ -37,6 +37,7 @@
                 color: #ffffff;
                 cursor: pointer;
                 border: none;
+                margin-bottom: 14px;
             }
             input:hover{
                 color: #0096FF;
@@ -54,11 +55,13 @@
         </style>
     </head>
     <body>
-        <h2>Gott Verdamm Mi Ipsum !</h2>
+        <h2>Elsass Ipsum</h2>
         <p>
             <label for="nbParagraph">Paragraphe(s):</label>
             <input type="number" value="1" name="nbParagraph" id="nbParagraph" min="1" max="10">
-            <input type="button" value="Générer !" name="generer" id="generer">
+            <br><label for="baliseP">Balise(s) &lt;P&gt; ? </label>
+            <input type="checkbox" value="1" name="baliseP" id="baliseP" checked>
+            <br><input type="button" value="Générer !" name="generer" id="generer">
         </p>
         <p> 
             <input type="button" value="Sélectionner" name="selectionner" id="selectionner">
